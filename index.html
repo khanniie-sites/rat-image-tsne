@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <script src="script2.js"></script>
+    <style>
+        #can{
+            display: none;
+        }
+        
+        canvas{
+            border: 4px solid white;
+            box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.05);
+            /*box-sizing: border-box;*/
+        }
+
+        #flex-container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            flex-wrap: wrap;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: auto;
+        }
+
+        #info{
+            width: 500px;
+            padding-left: 16px;
+            min-height: 400px;
+        }
+
+        #title {
+            color: black;
+            border-bottom: 2px solid black;
+            background-color: white;
+        }
+
+        #grid-canvas{
+            position: absolute;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+
+        #warning{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #canvas-container{
+            position: relative;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+        <div id="canvas-container">
+            <div id="warning">Loading images... please wait</div>
+            <canvas id="can" width="6000" height="4800"></canvas>
+            <canvas id="grid-canvas" width="6000" height="4800"></canvas>
+            <canvas id="canvas" width="675" height="540"></canvas>
+        </div>
+        <div id="info">
+            <h2 id="title"></h2>
+            <p id="description"></p>
+        </div>
+    </div>
+</body>
+</html>
