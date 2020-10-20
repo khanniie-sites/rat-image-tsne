@@ -143,7 +143,7 @@ function setup(img_data){
            }
         }
         // Load the sprite sheet from an image file
-        image.src = '/' + img_data[i][0];
+        image.src = 'https://connie.dog/rat-image-tsne/' + img_data[i][0];
         rat_images.push([image, img_data[i][1] * 0.95, img_data[i][2] * 0.95, img_data[i][3], false])
     } 
 }
